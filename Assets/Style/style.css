@@ -1,0 +1,479 @@
+*
+ 
+ h1::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  h1::before {
+    content: " ";
+    display: baseline;
+    position:absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsla(225, 6%, 25%, 0.568);
+    z-index: -1;
+    transition: transform .5s ease;
+    border-radius: 20px ;
+    padding: 28px;
+  }
+  
+  h1 {
+    color: hsl(223, 30%, 95%) ;
+    position: relative;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width:1;
+    text-align: center ; 
+    height: 50px;
+
+
+    
+  } 
+
+  @media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+  }
+  @media print {
+    body {
+      font-size: 10pt;
+    }
+  }
+  
+  @media screen {
+    body {
+      font-size: 13px;
+    }
+  }
+  
+  @media screen, print {
+    body {
+      line-height: 1.2;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 480px) and (resolution: 150dpi) {
+    body {
+      line-height: 1.4;
+    }
+  }
+
+
+.bubbles
+{
+  position: relative;
+  display:flex;
+
+}
+.bubbles span
+{
+  position:unset;
+  width: 10px;
+  height: 10px;
+  background: #f3bc7e;
+  margin:  10px;
+  border-radius: 100%;
+  box-shadow:  0 0 0 10px #e7c68844,
+  0 0 50px #f1ad6c,
+  0 0 100px #ffffff;
+  animation:animate 2s linear infinite;
+  animation-duration: calc(90s / var(--i));
+}
+.bubbles span:nth-child(even)
+{
+  background: #ff2d75;
+  box-shadow:  0 0 0 10px #bb54d444,
+  0 0 50px #d1b5bf,
+  0 0 100px #ff2d75;
+}
+
+@keyframes animate
+{
+0%
+{
+  transform: translateY(100vh) scale(0);
+}
+100%
+{
+  transform: translateY(-10vh) scale(1);
+}
+}
+.center{
+  display: flex;
+  flex-direction: row;
+  justify-content:inline;
+  align-items:center;
+  gap: 8rem;
+  
+  
+}
+  .item-1{
+font-size: 1.5rem;
+gap: 5rem;
+  }
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+header{
+  background-color: #7595a3;
+  text-align: center;
+  padding: 10 px;
+  border-radius: 40px;
+  
+}
+.navbar{
+ 
+  height: 50px;
+}
+aside{
+  width: 20%;
+  float: left;
+  padding: 10px;
+}
+section{
+  width: 40%;
+  float: left;
+  padding: 10px;
+}
+article{
+  width: 40%;
+  float: left;
+  padding: 10px;
+}
+
+  h2{
+    color: rgb(25, 44, 54);
+  }
+
+  .percentagea{
+   display: block;
+    background-color: #88dab8;
+    padding:1px;
+  border-radius: 50px;
+    width: 50%;
+    margin:0;
+  }
+  .percentageb{
+    display: block;
+     background-color:  #e6e9bb;
+     padding:1px;
+   border-radius: 50px;
+     width: 45%;
+     margin:0;
+   }
+   .percentagec{
+    display: block;
+     background-color:  #88dab8;
+     padding:1px;
+   border-radius: 50px;
+     width: 10%;
+     margin:0;
+   }
+   .percentaged{
+    
+     background-color:  #e6e9bb;
+     padding:1px;
+   border-radius: 50px;
+     width: 20%;
+     margin:0;
+   }
+   .percentagee{
+    display: block;
+     background-color: #88dab8;
+     padding:1px;
+   border-radius: 50px;
+     width: 30%;
+     margin:0;
+   }
+   .percentagef{
+    display: block;
+     background-color: #e6e9bb;
+     padding:1px;
+   border-radius: 50px;
+     width: 45%;
+     margin:0;
+   }  
+    
+   p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffffff;
+   }
+   .hello{
+    font-size: 25px;
+    color: rgb(25, 44, 54);
+    border: #88dab8;
+    display: block;
+       border-radius: 30px;
+    padding: 20px 30px 10px;
+    background-color: #7c72a0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+   }
+    
+   img{
+    
+            border-radius: 100px;
+
+          }
+    .center{
+      
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      
+    }
+    a{
+      color:rgb(219, 210, 181);
+      font-size:250%;
+    }
+   
+    
+    .techstack{
+      font-size: 75px;
+      color: #e6e9bb;
+          text-align: center;
+      position:center;
+      border-radius:30px;
+     margin:300px 100px 10px;
+      background-color: #7595a3;
+     height: auto; 
+      width: 500px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+    }
+    .text{
+    
+      display: block;
+      background-color: #7595a3;
+      
+      padding:10px;
+      width: 100%;
+      margin: 30px 20px 0 auto;
+     border-radius: 20px;
+    }
+  
+   
+ .center2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 25%;
+ }
+ .topnav {
+  background-color: #1A1A1D;
+  overflow:visible;
+  overflow-x: hidden
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 4px 16px;
+text-decoration: none;
+font-size: 30px;
+background-color:  #9b62db;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color: #66b7bd;
+color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+background-color:rgb(233, 223, 223);
+ border-radius: 0px 0px 20px;  
+width: 10%;
+height: 10%;
+
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+float: right;
+}
+.logo{
+  width: 10%;
+  height: 5%;
+  float: left;
+
+}
+.contactfont {
+  font-size: 300%;
+  color: #ffffff;
+}
+/* Style all font awesome icons */
+.fa {
+ 
+    padding: 20px;
+    font-size: 30px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  
+  margin: 5px 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #b9b1b1;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.containers {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #90a2c948;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 60px;
+  padding-top: 30px;
+
+  position: relative;
+}
+
+nav a {
+  color: #38aedd;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #d3d3d3;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #bebcbc;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
+.skills-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.skills-container h1 {
+    margin-bottom: 20px;
+    color: rgba(158, 201, 204, 0.329);
+    text-shadow: 3px 3px rgb(146, 123, 123);
+}
+
+.skill-box {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.skill-box h3 {
+    margin: 0;
+    color: #444;
+}
+
+.skill-bar {
+    width: 100%;
+    background: #7da3c9;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid #30b5da42;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.skill-fill {
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 30px;
+    color: rgb(29, 31, 29);
+    font-weight: bold;
+    border-radius: 5px;
+    transition: width 0.8s ease-in-out;
+}
+.html { background: rgb(216, 173, 173); width: 90%; }  
+        .css { background: rgb(159, 159, 204); width: 90%; }  
+        .java { background: rgb(204, 204, 177); color: black; width: 30%; }  
+        .sql { background: rgb(185, 150, 185); width: 30%; }  
+        .django { background: rgb(174, 194, 174); width: 50%; }  
